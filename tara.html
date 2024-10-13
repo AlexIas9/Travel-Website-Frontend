@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA - Country Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4fc;
+        }
+        /* Stil pentru bara de navigație */
+        
+        #topbar {
+            list-style-type: none;
+            background: linear-gradient(90deg, #0056ff, #00b4ff);
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+        
+        .menu-item {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            border-radius: 4px;
+        }
+        
+        .menu-item a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .menu-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .menu-item a:hover {
+            color: #ffd700;
+        }
+        /* Stil pentru antetul țării */
+        
+        .country-header {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+        
+        .country-header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(60%);
+        }
+        
+        .country-header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            margin: 0;
+        }
+        /* Stil pentru conținutul principal */
+        
+        .content {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .content h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .content .details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .detail-card {
+            flex: 1;
+            min-width: 300px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .detail-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .detail-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .detail-card h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .detail-card p {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .detail-card {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="topbar">
+        <li class="menu-item"><a href="Home.html">Home</a></li>
+        <li class="menu-item"><a href="About.html">About</a></li>
+        <li class="menu-item"><a href="contact.html">Contact</a></li>
+        <li class="menu-item"><a href="login.html">Login</a></li>
+    </ul>
+
+    <!-- Secțiunea de antet pentru SUA -->
+    <div class="country-header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="USA">
+        <h1>United States of America</h1>
+    </div>
+
+    <!-- Conținutul principal al paginii -->
+    <div class="content">
+        <h2>Welcome to the United States</h2>
+        <p>The United States of America, commonly known as the USA, is a country primarily located in North America. It is known for its diverse culture, rich history, and numerous landmarks. From the bustling cities to the stunning natural landscapes, the
+            USA offers a wide range of experiences for travelers.</p>
+
+        <div class="details">
+            <div class="detail-card">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/7/2021/09/GettyImages-1279734279-24aade8.jpg?resize=1200%2C630" alt="Statue of Liberty">
+                <h3>Statue of Liberty</h3>
+                <p>Located in New York Harbor, the Statue of Liberty is a symbol of freedom and democracy. It was a gift from France and has become one of the most recognizable landmarks in the world.</p>
+            </div>
+            <div class="detail-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJBJOhCzEJknnMB6t_eWOA-JoglYqKTtffmw&s" alt="Grand Canyon">
+                <h3>Grand Canyon</h3>
+                <p>The Grand Canyon, located in Arizona, is a natural wonder known for its immense size and intricate and colorful landscape. It offers breathtaking views and is a popular destination for hiking and sightseeing.</p>
+            </div>
+            <div class="detail-card">
+                <img src="https://assets.editorial.aetnd.com/uploads/2015/02/topic-golden-gate-bridge-gettyimages-177770941.jpg" alt="Golden Gate Bridge">
+                <h3>Golden Gate Bridge</h3>
+                <p>The Golden Gate Bridge is an iconic suspension bridge spanning the Golden Gate Strait in San Francisco. It is a marvel of engineering and a popular spot for photography.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

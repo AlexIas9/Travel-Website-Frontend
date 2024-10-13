@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4fc;
+        }
+        /* Stil pentru bara de navigație */
+        
+        #topbar {
+            list-style-type: none;
+            background: linear-gradient(90deg, #0056ff, #00b4ff);
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+        
+        .menu-item {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            border-radius: 4px;
+        }
+        
+        .menu-item a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .menu-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .menu-item a:hover {
+            color: #ffd700;
+        }
+        /* Stil pentru secțiunile de conținut */
+        
+        .section {
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .section h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /* Stil pentru secțiunea echipei */
+        
+        .team-section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        
+        .team-member {
+            display: inline-block;
+            width: 30%;
+            margin: 1%;
+            vertical-align: top;
+            text-align: center;
+        }
+        
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .team-member h3 {
+            margin: 10px 0;
+            font-size: 20px;
+            color: #333;
+        }
+        
+        .team-member p {
+            color: #666;
+        }
+        /* Stil pentru secțiunea testimoniale */
+        
+        .testimonials-section {
+            background-color: #f7f9fc;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        
+        .testimonial {
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+        
+        .testimonial p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+            border-left: 4px solid #0056ff;
+            padding-left: 20px;
+            margin: 0;
+        }
+        
+        .testimonial cite {
+            display: block;
+            margin-top: 10px;
+            font-style: italic;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="topbar">
+        <li class="menu-item"><a href="Home.html">Home</a></li>
+        <li class="menu-item"><a href="About.html">About</a></li>
+        <li class="menu-item"><a href="contact.html">Contact</a></li>
+        <li class="menu-item"><a href="login.html">Login</a></li>
+    </ul>
+
+    <!-- Secțiunea de introducere -->
+    <div class="section">
+        <h1>About Us</h1>
+        <p>Welcome to our travel company. We are passionate about exploring the world and bringing unforgettable travel experiences to our clients. Our mission is to provide exceptional service and create personalized travel adventures that cater to every
+            interest and budget. Whether you're seeking thrilling adventures, serene retreats, or cultural explorations, we are here to make your travel dreams come true.</p>
+    </div>
+
+    <!-- Secțiunea echipei -->
+    <div class="team-section">
+        <h1>Meet Our Team</h1>
+        <div class="team-member">
+            <img src="https://thumbor.unica.ro/unsafe/480x300/smart/filters:format(webp):contrast(8):quality(75)/https://www.viva.ro/wp-content/uploads/2024/07/ispita-marcel.jpg" alt="Maluma">
+            <h3>Maluma</h3>
+            <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+            <img src="https://img.a1.ro/?u=https%3A%2F%2Fa1.ro%2Fuploads%2Fmodules%2Fnews%2F0%2F2024%2F7%2F22%2F1119461%2Fhbybbdxx-7xnv9x9r.jpg" alt="Maria">
+            <h3>Maria</h3>
+            <p>Travel Specialist</p>
+        </div>
+        <div class="team-member">
+            <img src="https://img.a1.ro/0/2023/12/14/1106800/img-10-uowkg4vo.jpg?w=800&h=452&c=1" alt="Alin">
+            <h3>Alin</h3>
+            <p>Marketing Manager</p>
+        </div>
+    </div>
+
+    <!-- Secțiunea testimoniale -->
+    <div class="testimonials-section">
+        <h1>What Our Clients Say</h1>
+        <div class="testimonial">
+            <p>"Our trip was absolutely amazing! The attention to detail and personalized service exceeded our expectations. We felt like we were truly taken care of every step of the way."</p>
+            <cite>- Sarah Parker</cite>
+        </div>
+        <div class="testimonial">
+            <p>"The travel itinerary was perfectly curated. From the breathtaking destinations to the smooth logistics, everything was top-notch. I can't wait for our next adventure with this team!"</p>
+            <cite>- Michael Brown</cite>
+        </div>
+    </div>
+</body>
+
+</html>

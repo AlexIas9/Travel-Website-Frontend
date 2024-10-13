@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4fc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        /* Stil pentru bara de navigație */
+        
+        #topbar {
+            list-style-type: none;
+            background: linear-gradient(90deg, #0056ff, #00b4ff);
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+        /* Stil pentru elementele de meniu */
+        
+        .menu-item {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            border-radius: 4px;
+        }
+        /* Stil pentru link-urile din meniuri */
+        
+        .menu-item a {
+            text-decoration: none;
+            color: white;
+        }
+        /* Efect de hover pentru elementele de meniu */
+        
+        .menu-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        /* Efect pentru link-urile din meniuri */
+        
+        .menu-item a:hover {
+            color: #ffd700;
+        }
+        
+        form {
+            background-color: white;
+            width: 400px;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 80px;
+            /* Adjust margin to avoid overlap with navbar */
+        }
+        
+        .form-heading {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 24px;
+            font-weight: bold;
+        }
+        
+        #social-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+        
+        #input-container {
+            margin-bottom: 24px;
+        }
+        
+        .input-box {
+            font-size: 16px;
+            padding: 12px;
+            margin-bottom: 20px;
+            width: 100%;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            background-color: #f7f9fc;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+        
+        .input-box:focus {
+            outline: none;
+            border-color: #0056ff;
+        }
+        
+        #submit-button {
+            background-color: #0056ff;
+            padding: 12px;
+            width: 100%;
+            font-size: 18px;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 16px;
+        }
+        
+        #submit-button:hover {
+            background-color: #0041cc;
+        }
+        /* Log In Button */
+        
+        #login-button {
+            background-color: transparent;
+            border: none;
+            color: #0056ff;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        
+        #login-button:hover {
+            color: #0041cc;
+        }
+        /* Responsive adjustments */
+        
+        @media (max-width: 600px) {
+            form {
+                width: 100%;
+                padding: 20px;
+            }
+            .form-heading {
+                font-size: 24px;
+            }
+            .social-icon {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul id="topbar">
+        <li class="menu-item"><a href="Home.html">Home</a></li>
+        <li class="menu-item"><a href="About.html">About</a></li>
+        <li class="menu-item"><a href="contact.html">Contact</a></li>
+        <li class="menu-item"><a href="login.html">Login</a></li>
+    </ul>
+
+    <form>
+        <h1 class="form-heading">Sign Up</h1>
+        <div id="social-wrapper">
+            <img class="social-icon" src="https://pluspng.com/img-png/google-logo-png-open-2000.png" alt="Google">
+            <img class="social-icon" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-512.png" alt="Facebook">
+            <img class="social-icon" src="https://cdn.icon-icons.com/icons2/2389/PNG/512/github_logo_icon_145252.png" alt="GitHub">
+            <img class="social-icon" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/linkedin_circle-512.png" alt="LinkedIn">
+        </div>
+
+        <div id="input-container">
+            <div>
+                <input class="input-box" type="text" name="Username" placeholder="Username" required>
+            </div>
+            <div>
+                <input class="input-box" type="email" name="Email" placeholder="Email" required>
+            </div>
+            <div>
+                <input class="input-box" type="password" name="Password" placeholder="Password" required>
+            </div>
+            <div>
+                <input class="input-box" type="password" name="Confirm Password" placeholder="Confirm Password" required>
+            </div>
+
+            <input id="submit-button" type="submit" value="Sign Up">
+
+            <!-- Log In Button -->
+            <button id="login-button" onclick="location.href='login.html';">Already have an account? Log In</button>
+        </div>
+    </form>
+</body>
+
+</html>

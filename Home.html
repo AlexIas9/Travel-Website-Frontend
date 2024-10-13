@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4fc;
+        }
+
+        /* Stil pentru bara de navigație */
+
+        #topbar {
+            list-style-type: none;
+            background: linear-gradient(90deg, #0056ff, #00b4ff);
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        .menu-item {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .menu-item a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .menu-item a:hover {
+            color: #ffd700;
+        }
+
+        /* Stil pentru conținutul paginii */
+
+        .hero-section {
+            width: 100%;
+            height: 600px;
+            background: url('https://c.pxhere.com/photos/d5/eb/adventure_clouds_colorful_colourful_desktop_backgrounds_forest_free_wallpaper_green-910346.jpg!s2') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section h1 {
+            font-size: 48px;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero-section p {
+            font-size: 24px;
+            margin-top: 10px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .description {
+            padding: 40px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: -50px auto 20px auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .description h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .description p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Stil pentru tabelul de țări */
+
+        .country-table {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        .country-table td {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .country-table img {
+            width: 200px;
+            /* Imagini mai mari */
+            height: auto;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .country-table img:hover {
+            transform: scale(1.1);
+        }
+
+        .country-table a {
+            text-decoration: none;
+            color: #0056ff;
+            font-weight: bold;
+        }
+
+        .country-table a:hover {
+            color: #0041cc;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="topbar">
+        <li class="menu-item"><a href="Home.html">Home</a></li>
+        <li class="menu-item"><a href="About.html">About</a></li>
+        <li class="menu-item"><a href="contact.html">Contact</a></li>
+        <li class="menu-item"><a href="login.html">Login</a></li>
+    </ul>
+
+    <!-- Secțiunea de introducere -->
+    <div class="hero-section">
+        <h1>Explore the World</h1>
+        <p>Join us on an unforgettable journey across the globe. Discover new cultures, breathtaking landscapes, and
+            unique adventures!</p>
+    </div>
+
+    <!-- Descriere -->
+    <div class="description">
+        <h2>Why Travel With Us?</h2>
+        <p>We offer curated travel experiences that cater to every taste and budget. From thrilling adventures to
+            relaxing getaways, our expertly designed trips will ensure you have the journey of a lifetime. Whether
+            you're looking to explore bustling cities,
+            serene beaches, or majestic mountains, we've got you covered. Our dedicated team provides personalized
+            service and insider knowledge to make your trip as enjoyable and stress-free as possible.</p>
+    </div>
+
+    <!-- Tabelul cu țări -->
+    <table class="country-table">
+        <tr>
+            <td>
+                <a href="tara.html"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBLwGTZvGs6Qb3snH79S9XwaVtc5FiRAaGbg&s"
+                        alt="USA"><br>USA</a>
+            </td>
+            <td>
+                <a href="tara.html"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl9MWtj2M0kc0nKmyzvK3IVoraYugJ2RwJ_Q&s"
+                        alt="Canada"><br>Canada</a>
+            </td>
+            <td>
+                <a href="tara.html"><img
+                        src="https://britainsbestguides.org/wp-content/uploads/2020/09/1978964397_864791e391_b.jpg"
+                        alt="UK"><br>UK</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="tara.html"><img src="https://files.ekmcdn.com/0ec9a8/images/germany-5ft-x-3ft-flag-1-912-p.jpg"
+                        alt="Germany"><br>Germany</a>
+            </td>
+            <td>
+                <a href="tara.html"><img src="https://www.orfonline.org/public/uploads/posts/image/65a5414a8a121.png"
+                        alt="France"><br>France</a>
+            </td>
+            <td>
+                <a href="tara.html"><img
+                        src="https://www.learnitalianpod.com/wp-content/uploads/2023/03/italian_flag_symbols_of_italy.jpg"
+                        alt="Italy"><br>Italy</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="tara.html"><img
+                        src="https://i0.wp.com/thattravelista.com/wp-content/uploads/2023/02/Spain-Flag-1.jpg?fit=1100%2C733&ssl=1"
+                        alt="Spain"><br>Spain</a>
+            </td>
+            <td>
+                <a href="tara.html"><img
+                        src="https://i.ytimg.com/vi/VugD1M5MvHY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAIFduLkEapqmraM3A5L1QTj-ubKA"
+                        alt="Japan"><br>Japan</a>
+            </td>
+            <td>
+                <a href="tara.html"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJhRj4nZuas9Br691I-AElfjjWUgFzPmDKvw&s"
+                        alt="China"><br>China</a>
+            </td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
